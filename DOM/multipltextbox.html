@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table id="show">
+
+    </table>
+    
+    <button onclick="createtable()">click Here</button>
+    
+    <script>
+            var i=0;
+
+        function createtable() {
+            i++
+            let x=document.getElementById("show").insertAdjacentHTML('beforeend','<tr><td>'+i+'</td><td><input type="text"></td><td><button onclick="delROW(this)">Remove</buttons')
+
+
+        }
+function delROW(button) {
+    var tr=button.paraentNode.paraentNode;
+    tr.paraentNode.removeChild(tr)
+}
+
+    </script>
+    
+</body>
+</html>

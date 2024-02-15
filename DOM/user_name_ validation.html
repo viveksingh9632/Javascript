@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- //username empty nhi hona chaiye
+    5 mini letter vivek
+maxi 20
+regular
+only alfabits 1 22 @$ 
+password
+button
+email
+chekbox 
+radio button
+value ko akses bhar se
+span jaha se khtm hota h whi se suru hota hai
+.value hi chek krni h right h
+value akss
+value a mai store
+-->
+
+<form onsubmit="return myfun()">
+    userName: <input type="text" value="" id="user_Name">
+    <span id="s2"></span> 
+    <br><br>
+    <input type="submit" value="Submit">
+
+</form>
+
+<script>
+
+var s=document.getElementById("s2")
+    
+    s.style.color="red"
+    //x.style.width="250px"
+    //x.style.color="yellow"
+    function myfun(){
+        var x=document.getElementById("user_Name").value
+
+        var correct_way=/^[A-Za-z]+$/;
+        if(x==""){
+            document.getElementById("s2").innerHTML=("**please fill username")
+            return false
+        }
+        if(x.length<3){
+            document.getElementById("s2").innerHTML=("**user must be 3character")
+            return false
+
+        }
+        if(x.length>21){
+            document.getElementById("s2").innerHTML=("**user must be lessthan 21 character")
+            return false
+
+        }
+       if(x.match(correct_way))
+                true
+                else{
+                    document.getElementById("s2").innerHTML=("**only alphabeta are allowed")
+                return false
+                }
+       }
+
+        
+
+        
+
+
+    
+</script>
+
+</body>
+</html>

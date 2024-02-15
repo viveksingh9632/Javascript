@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Model</title>
+</head>
+<body>
+    <h1 class='title' id='first-title'>Home</h1>
+    <h1 class='title' id='first-title'>About</h1>
+    <h1 class='title' id='first-title'>Gallary</h1>
+    <h1></h1>
+
+
+<script>
+
+//x=document.getElementsByTagName("p")
+//console.log(x)
+//p=document.getElementsByClassName("title")
+//console.log(p)
+//name=document.getElementById("s2")
+//console.log(name)
+
+//x=document.querySelector("#first-title")
+//console.log(x)
+const titles = document.querySelectorAll('h1')
+console.log(titles)
+titles[3].className = 'title'
+console.log(titles)
+titles[3].id = 'fourth-title'
+console.log(titles)
+
+
+</script>
+</body>
+</html>

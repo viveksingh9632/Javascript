@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onclick="return myfun()" >
+        Mobile Number :<input type="text" id="mobilenumber" value="">
+        <div id="msg" style="color: red;"></div>
+        <input type="submit" value="Submit">
+    </form>
+
+
+    <script>
+        function myfun() {
+            let x=document.getElementById("mobilenumber").value
+            console.log(x)
+            if(x==""){
+             
+                document.getElementById("msg").innerHTML="**please fill mobile number"
+                return false
+            }
+            if (isNaN(x)) {
+                document.getElementById("msg").innerHTML="**enter only Numeric value "
+                return false
+            }
+        
+            if (x.length<10) {
+                document.getElementById("msg").innerHTML="**must be 10 digit"
+                return false
+            }
+            if (x.length>10) {
+                document.getElementById("msg").innerHTML="**must be 10 digit"
+                return false
+            }
+
+        }
+
+    </script>
+</body>
+</html>

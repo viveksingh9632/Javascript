@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+const animal = {
+        kind: "Monkey",
+        food: "bananas", 
+        hobby: "jumping trees"
+    };
+
+
+   const display = `
+        <div class = "animal">
+            <h1>Hey, this is a ${animal.kind}</h1>
+            <p>It eats ${animal.food} and loves ${animal.hobby}</p>
+        </div>
+    `;
+    document.body.innerHTML = display;
+
+    </script>
+</body>
+</html>

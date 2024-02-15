@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+
+        var absent = 0;
+        var dept = "sales"
+        var basicsalary = 0
+        var wd = 27
+        var preesent = 22
+
+
+
+        if (absent >= 7 && dept == "sales") {
+            deduction = absent * 1000
+            document.write(deduction)
+
+        }
+        else if (absent >= 5 && dept == "sales") {
+            deduction = absent * 700
+            document.write(deduction)
+
+        }
+        else if (absent >= 2 && dept == "sales") {
+            deduction = absent * 100
+            document.write(deduction)
+
+
+        }
+
+        if (absent >= 7 && dept == "purchase") {
+            deduction = absent * 500
+            document.write(deduction)
+
+        }
+        else if (absent >= 5 && dept == "purchase") {
+            deduction = absent * 300
+            document.write(deduction)
+
+        }
+        else if (absent >= 2 && dept == "purchase") {
+            deduction = abset * 100
+            document.write(deduction)
+
+
+        }
+
+        if (basicsalary > 20000 && dept == "purchase") {
+            HRA = basicsalary * 8 / 100
+            document.write(HRA)
+
+        }
+        else if (basicsalary > 20000 && dept == "sales") {
+            HRA = basicsalary * 5 / 100
+            document.write(HRA)
+
+        }
+        else {
+            HRA = basicsalary * 3 / 100
+            document.write(HRA)
+            
+        }
+        
+        if (wd >= 25 && dept == "sales") {
+            da = basicsalary * 5 / 100
+            document.write(  da)
+        }
+        else {
+            da = basicsalary * 3 / 100
+            document.write( da)
+
+        }
+
+
+        if (dept == "sales" && wd >= 25) {
+            ea = 3000
+            document.write("EA" + ea)
+        }
+        else if (dept == "sales" && wd >= 25) {
+            ea = 2000
+            document.write("EA" + ea)
+        }
+        else if (dept == "purchase" && wd >= 25) {
+            ea = 2500
+            document.write("EA" + ea)
+        }
+
+
+
+        
+        if (dept == "purchase" && wd >= 25) {
+            ea = 1800
+            document.write("EA" + ea)
+        }
+        else {
+            ea = 1000
+            document.write("EA" + ea)
+        }
+
+
+
+        var a=0
+        console.log(a)
+
+
+        var b=1
+        console.log(b)
+
+
+        for(i=0;i<10;i++){
+            var temp=a+b
+            var a=b
+            var b=temp
+            console.log(temp)
+
+        }
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

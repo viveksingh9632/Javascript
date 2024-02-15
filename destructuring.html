@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destructuring</title>
+</head>
+<body>
+    <script>
+        let obj={
+            name:'vivek',
+            prince:"12",
+            age:"2",
+            sports:"cricket"
+        }
+        let{name,prince,age,sports}=obj
+        console.log(sports)
+
+
+
+        const arr=['sai','india','2018','javascript']
+
+
+        Array.prototype.extraProperty="vivek"
+        const myNewArray=[1,2,3,4,5]
+        for(let v in myNewArray){
+            console.log(v)
+        }
+
+
+    </script>
+</body>
+</html>

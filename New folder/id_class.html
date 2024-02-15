@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <style>
+        .box{
+            margin:5px;
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            float: left;
+                    }
+    </style>
+    <h2 id="title">IDs vs Class</h2>
+    <h2 id="title">ID</h2>
+
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+
+    <script>
+        x=document.getElementById("title")
+        console.log(x)
+
+
+        y=document.getElementsByClassName("box")
+        console.log(y)
+    </script>
+
+</body>
+</html>
